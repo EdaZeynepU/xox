@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.ox-text,
+.win-text {
+  /* text-shadow:  rgb(212, 194, 123) 1px 0 20px; */
+  font-weight: bold;
+  text-shadow: rgb(240, 228, 182) 1px 0 50px;
+  background: -webkit-linear-gradient(#ffffff, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ox-text {
+  font-size: 8em;
+}
+
+.win-text {
+  font-size: 5em;
+  text-align: center;
+  transition-duration: 1s;
+}
+
+.card-table {
+  display: grid;
+  height: 80vh;
+  width: 60vw;
+  min-height: 400px;
+  min-width: 400px;
+  max-height: 1000px;
+  max-width: 1000px;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card-logo {
+  height: 50%;
+}
+
+body {
+  background-image: url("shubham-dhage-adOXGefXU-Y-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hidden-t {
+  color: transparent;
+  background: transparent;
+  text-shadow: none;
+  font-size: 0.1em;
+}
+
+.fade-in {
+  margin-bottom: 5px;
+  animation: fadeIn 1s ease-in-out infinite alternate;
+}
+
+.text-bg {
+  background: radial-gradient(#cccccc, #858585c5, transparent 80%)
+}
+
+.turn-text {
+  text-shadow: rgb(240, 228, 182) 1px 0 50px;
+  background: -webkit-linear-gradient(#0000008a,#000000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5em;
+  text-align: center;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    background-color: rgba(2, 15, 29, 0.267);
+  }
+
+  100% {
+    background-color: rgba(2, 15, 29, 0.95);
+  }
+}
